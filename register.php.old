@@ -1,0 +1,160 @@
+<?php require ("includes/globals.php");
+session_start();
+$page_title = "Register";
+require ($ROOT."functions/logout.php");
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title><?php echo $page_title ?> - BenFund</title>
+<?php include ($ROOT."includes/head.php") ?>
+</head>
+
+<body>
+<div class="container">
+<table cellspacing="0" cellpadding="0" align="center">
+<!--HEADER START-->
+  <tr>
+    <td colspan="2" valign="top">
+<?php include ($ROOT."includes/header.php") ?>
+	</td>
+  </tr>
+  <!--HEADER END-->
+  <!--LEFT COLUMN START-->
+  <tr>
+    <td class="leftcolumn" width="150px" valign="top">
+<?php include ($ROOT."includes/left.php") ?>
+    </td>
+	<!--LEFT COLUMN END-->
+    <td valign="top" valign="top">
+	<!--PATHWAY START-->
+<?php include ($ROOT."includes/pathway.php") ?>
+	<!--PATHWAY END-->
+	<!--MAINBODY START-->
+	<div class="content_outer">
+	<div class="content_inner">
+<?php if (empty($_POST['accept']))
+		{die("<h1>You must accept the User Agreement and Privacy Policy to register for an account</h1>");
+		}
+?>
+<span class="pagetitle">BenFund Registration</span>
+<div class="hr"></div>
+	  <form action="review.php" method="post" name="register" id="register">
+          <table width="100%" border="0" bordercolor="#000000">
+            <tr> 
+              <td width="190">
+                  <span class="emphasis">Account Name:</span><br>
+                </div></td>
+              <td><input name="group" type="text" id="group" size="25" class="nice" maxlength="30" class="nice" value="<?php echo $name; ?>"></td>
+			  <td>(Example: Boy Scout Troop 428)</td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">Contact Name:</span></td>
+              <td><input name="name" type="text" id="name" size="25" class="nice" value="<?php echo $c_name; ?>"></td>
+			  <td>(First, Middle Inital, 
+                  Last)</td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">Address:</span></td>
+              <td><input name="address1" type="text" id="address1" size="25" class="nice" value="<?php echo $address1; ?>"></td>
+			  <td></td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">Address 2:</span></td>
+              <td><input name="address2" type="text" id="address2" size="25" class="nice" value="<?php echo $address2; ?>"></td>
+			  <td>(optional)</td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">City:</span></td>
+              <td><input name="city" type="text" id="city" size="25" class="nice" value="<?php echo $city; ?>"></td>
+			  <td></td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">State:</span></td>
+              <td><input name="state" type="text" id="state" size="2" onKeyup="autotab(this, document.register.zip)" maxlength="2"  class="nice" value="<?php echo $group; ?>"><span class="emphasisright">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zip:<input name="zip" type="text" id="zip" size="5" onKeyup="autotab(this, document.register.p1)" maxlength="5"  class="nice" value="<?php echo $zip; ?>"></td>
+			<td></td>
+            </tr>
+            <tr> 
+              <td  width="190"><span class="emphasis">Phone:</span></td>
+              <td>
+                <input name="p1" type="text" id="p1" size="3" onKeyup="autotab(this, document.register.p2)" maxlength="3"  class="acnice" value="<?php echo $p1; ?>">
+                <input name="p2" type="text" id="p2" size="2" onKeyup="autotab(this, document.register.p3)" maxlength="3"  class="nice"value="<?php echo $p2; ?>"><span class="emphasis">-</span><input name="p3" type="text" id="p3" size="3" onKeyup="autotab(this, document.register.pa1)" maxlength="4"  class="nice"value="<?php echo $p3; ?>"></td>
+				<td></td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">Alternate Phone:</span></td>
+              <td><input name="pa1" type="text" id="pa1" size="3" onKeyup="autotab(this, document.register.pa2)" maxlength="3"  class="acnice" value="<?php echo $pa1; ?>"> 
+                <input name="pa2" type="text" id="pa2" size="2" onKeyup="autotab(this, document.register.pa3)" maxlength="3"  class="nice" value="<?php echo $pa2; ?>"><span class="emphasis">-</span><input name="pa3" type="text" id="pa3" size="3" onKeyup="autotab(this, document.register.email)" maxlength="4"  class="nice" value="<?php echo $pa3; ?>"></td>
+				<td></td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">E-mail Address:</span></td>
+              <td><input name="email" type="text" id="email" size="25" class="nice" value="<?php echo $email; ?>"></td>
+			  <td>(must be a valid working address)</td>
+            </tr>
+            <tr> 
+              <td width="190">&nbsp;</td>
+              <td>&nbsp;</td>
+			  <td></td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">Social Security #:</div></td>
+              <td><input name="ssn" type="text" id="ssn" size="9" onKeyup="autotab(this, document.register.pw)" maxlength="9"  class="nice" value="<?php echo $ssn; ?>"> 
+              </td>
+			  <td></td>
+            </tr>
+			           <tr> 
+              <td width="190"><span class="errormsg">-OR-</div></td>
+              <td></td>
+			  <td></td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">Federal Tax ID:</span></td>
+              <td><input name="tax" type="text" id="tax" size="9" onKeyup="autotab(this, document.register.pw)" maxlength="9"  class="nice" value="<?php echo $tax; ?>"></td>
+			  <td></td>
+            </tr>
+            <tr>
+              <td width="190">&nbsp;</td>
+              <td>&nbsp;</td>
+			  <td></td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">Password:</span></td>
+              <td><input name="pw" type="password" id="pw" size="12" maxlength="10"  class="nice" value="<?php echo $pw; ?>"></td>
+			  <td>(Must be at least 6 characters)</td>
+            </tr>
+            <tr> 
+              <td width="190"><span class="emphasis">Confirm:</span></td>
+              <td><input name="pwconfirm" type="password" id="pwconfirm" size="12" maxlength="10"  class="nice" value="<?php echo $pwconfirm; ?>"></td>
+			  <td></td>
+            </tr>
+            <tr> 
+              <td width="190"><p><span class="emphasis">PIN <img src="https://www.benfund.com/images/elements/icons/sm/info.gif" title="The body of the tooltip is stored in the title" tooltitle="The Title of the Tooltip" class="toolTipImg"/></div><p></td>
+              <td><input name="pin" type="password" id="pin" size="4" maxlength="4"  class="nice"  value="<?php echo $pin; ?>"></td>
+			  <td>(4 Digits)*</td>
+            </tr>
+          </table>        
+  <p align="center">
+    <input class="cool" type="submit" name="Submit" value="Next" class="button">
+    <input class="cool" type="reset" name="Submit2" value="Reset">
+  </p>
+        </form>
+        <p align="center">*This will be used if you need to reset your password. 
+          Once it is set, it cannot be changed.</p>
+	</div>
+	</div>
+	</td>
+  </tr>
+  <!--MAINBODY END-->
+  <!--FOOTER START-->
+  <tr>
+    <td colspan="2">
+<?php include ($ROOT."includes/footer.php") ?>
+	</td>
+  </tr>
+  <!--FOOTER START-->
+</table>
+<?php include ($ROOT."/includes/foot.php"); ?>
+</body>
+</html>

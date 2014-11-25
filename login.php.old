@@ -1,0 +1,265 @@
+<?php
+session_start();
+require ("includes/globals.php");
+if ($_GET['logout'] == 'true'){
+require ($ROOT."/functions/logout.php");
+logout();
+}
+$page_title = "Login";
+?>
+<?php $_GET['error'];
+$loggedout = '<div class="error">
+	<table><tr><td>
+	<div class="promptimg"><img src="https://www.benfund.com/images/elements/icons/alert.gif" class="promptimg"></div>
+	</td><td>
+	<span class="errormsg">You need to be Logged in to access this page.<br>Please Log In.</span></div>
+	</td></table></div>
+	<p>
+	<div id="yreghtxt">
+	<h2>Try the following hints.</h2>
+	<ul class="yregbpt">
+	<li>
+	<h3>Your Session May have Timed Out?</h3>
+	<cite>If your session has been inactive for too long our system will automatically log you out for security.</cite></li>
+	<li><h3>Did you forget or misspell your Benfund Number or password?</h3>
+	For your Convenience you can <a href="https://wwww.benfund.com"> have your BenFund Number sent to your configured Email address</a> or <a class="links" href="https://wwww.benfund.com">View your Password Hint online</a> by using your BenFund Number.</li>
+	<li><h3>Still having trouble?</h3>
+	If you are still unable to access your account you can reset your password or contact a friendly BenFund Representative.</li>
+		</ul>
+
+</div></div>';
+ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title><?php echo $page_title ?> - BenFund</title>
+<style type='text/css'>
+.stretchtoggle{
+margin:4px 0;
+padding:2px 8px;
+cursor:pointer;
+font-size: 14pt;
+color: #0000CC;
+text-decoration: none;
+font-weight: bold;
+}
+.stretch_active{
+margin:4px 0;
+padding:2px 8px;
+cursor:pointer;
+font-size: 14pt;
+color: #0000CC;
+text-decoration: none;
+font-weight: bold;
+}
+
+.stretchtoggle, .stretch_active {-moz-border-radius:4px;}
+</style>
+<?php include ($ROOT."/includes/head.php") ?>
+<script type="text/javascript" src="https://www.benfund.com/includes/js/btt.js"></script>
+<link media="screen" href="https://www.benfund.com/includes/css/bt.css" rel="stylesheet" type="text/css" style="display: block;" class="undefined">
+<!--
+<script type="text/javascript">
+window.onload=function(){enableTooltips()};
+</script>
+-->
+<script type='text/javascript'>
+window.onload = function()
+{
+  var mooTogs    = document.getElementsByClassName('stretchtoggle');
+  var mooStretch = document.getElementsByClassName('stretcher');
+
+  // must be before mooAccordion
+  mooTogs.each(function(tog, i) {
+    tog.onclick = function() {
+      if (tog.className == 'stretch_active') {
+        mooAccordion.clearAndToggle(mooStretch[i], i);
+        tog.className = 'stretchtoggle';
+
+        // automatically show the next stretcher (unless we're the last one)
+        if (i+1 != mooTogs.length) {
+          mooTogs[i+1].className='stretch_active';
+          mooAccordion.clearAndToggle(mooStretch[i+1], i+1);
+        }
+
+        return;
+      }
+
+      // reset then all then set clicked
+      mooTogs.each(function(rtog, ri) {mooTogs[ri].className = 'stretchtoggle';});
+      tog.className='stretch_active';
+    };
+  });
+
+  // could not get onComplete:function(el){} to achieve this effect
+  var mooAccordion = new fx.Accordion(mooTogs, mooStretch, {opacity:true, width:false, height:true});
+
+  // stretcher to open initially
+  mooAccordion.showThisHideOpen(mooStretch[0]);
+  mooTogs[0].className='stretch_active'
+enableTooltips()
+}
+
+</script>
+</head>
+
+<body>
+<div class="container" id="container">
+<table cellspacing="0" cellpadding="0" align="center">
+<!--HEADER START-->
+  <tr>
+    <td colspan="2" valign="top">
+<?php include ($ROOT."/includes/header.php"); ?>
+	</td>
+  </tr>
+  <!--HEADER END-->
+  <!--LEFT COLUMN START-->
+  <tr>
+    <td class="leftcolumn" width="150px" valign="top">
+<?php include ($ROOT."/includes/left.php") ?>
+    </td>
+	<!--LEFT COLUMN END-->
+    <td valign="top">
+	<!--PATHWAY START-->
+<?php include ($ROOT."/includes/pathway.php"); ?>
+	<!--PATHWAY END-->
+	<!--MAINBODY START-->
+	<div class="content_outer">
+	<div class="content_inner">
+	<table width="600"><tr>
+	<td width="350" valign="top">
+	<div class="splitleft">
+	<div class="advise">
+<?php
+if(!isset($_SESSION['valid_user'])){
+	$display = "noaccess";
+}
+if (isset($_SESSION['error'])){
+	$display = "wrongpwd";
+} else {
+	$display = "normal";
+}
+?>
+
+<?php
+switch ($display) {
+case 'noaccess':
+   echo '<div class="error">
+	<span class="errormsg">You need to be Logged in to access this page.<br>Please Log In.</span></div></div>
+	<p>
+	<div id="yreghtxt">
+	<h2>Try the following hints.</h2>
+	<ul class="yregbpt">
+	<li>
+	<h3>Your Session May have Timed Out?</h3>
+	<cite>If your session has been inactive for too long our system will automatically log you out for security.</cite></li>
+	<li><h3>Did you forget or misspell your Benfund Number or password?</h3>
+	For your Convenience you can <a href="https://wwww.benfund.com"> have your BenFund Number sent to your configured Email address</a> or <a class="links" href="https://wwww.benfund.com">View your Password Hint online</a> by using your BenFund Number.</li>
+	<li><h3>Still having trouble?</h3>
+	If you are still unable to access your account you can reset your password or contact a friendly BenFund Representative.</li>
+		</ul>
+
+</div></div>';
+   break;
+case "wrongpwd":
+   echo '	<div class="error">
+	<table><tr><td>
+	<div class="promptimg"><img src="https://www.benfund.com/images/elements/icons/alert.gif" class="promptimg"></div>
+	</td><td>
+	<span class="errormsg">' . $_SESSION['error'] . '</span></div>
+	</td></table></div>
+	<p>
+	<div id="yreghtxt">
+	<h2>Try the following hints.</h2>
+	<ul class="yregbpt">
+	<li>
+	<h3>Is the "Caps Lock" or "A" light on your keyboard on?</h3>
+	<cite>For added security all Benfund passwords are Case-Sensitive. Is it possible you have the Caps Lock key activated? If so, hit the "Caps Lock" key before trying again.</cite></li>
+	<li><h3>Did you forget or misspell your Benfund Number or password?</h3>
+	For your Convenience you can <a href="https://wwww.benfund.com"> have your BenFund Number sent to your configured Email address</a> or <a class="links" href="https://wwww.benfund.com">View your Password Hint online</a> by using your BenFund Number.</li>
+	<li><h3>Still having trouble?</h3>
+	If you are still unable to access your account you can reset your password or contact a friendly BenFund Representative.</li>
+		</ul>
+
+</div></div>';
+   break;
+case "normal":
+   echo ' <span class="pagetitle">Login to Benfund</span>
+<div class="hr"></div>
+<b title="What then is this!" alt="Lorem ipsum dolor sit amet, consectetuer adipiscing elit."><img src="https://www.benfund.com/images/elements/icons/sm/info.gif" border="0"></b>
+<img src="https://www.benfund.com/images/elements/icons/secure.gif" align="right"/>
+Feel confident that your sensitive information is kept safe by knowing you have a secure connection on BenFund.<p>
+<a href="securenfo.php">Find out more about Information Security on BenFund</a>';
+}
+?>
+<p>
+	</div>
+	</div>
+	</td>
+	<td width="225" valign="top">
+	<div class="splitright">
+	<div class="loginform">
+	<span class="subtitle">Log in to Benfund</span><p>
+	
+<a class="stretchtoggle">Client Login</a><b title="What then is this!" alt="Login as a client if you want to make a payment to another accounct such as a merchant or layaway account"><img src="https://www.benfund.com/images/elements/icons/sm/info.gif" border="0"></b>
+<div style="overflow: hidden; visibility: hidden; opacity: 0; height: 0px; margin-left: 8px;" class="stretcher">
+					<form name="form1" method="post" action="login_processor.php">
+ <span class="emphasis">Benfund Number:</span><br />
+                        <input name="id" type="text" id="id" size="5" maxlength="6" class="huge"> - <input name="cid" type="text" id="cid" size="2" maxlength="4" class="huge">
+                      <br />
+                      <span class="emphasis">Password:</span><br />
+                        <input name="pw" type="password" id="pw" size="5" maxlength="10"class="huge"></p>
+                      <br />
+                      <input type="checkbox" name="remember" id="remember"><span class="emphasis">Remember me</sp
+                      <div align="center">
+                        <input name="Submit" type="submit" value="Submit">
+                        <input type="reset" name="Submit2" value="Reset">
+                         </form>
+</div>
+<br />
+					  <a href="https://www.benfund.com/pwd_hint.php" class="emphasis3">Forgot your Password?</a>
+					  <br />
+</div>
+
+<a class="stretchtoggle"> Benfund/Merchant Login </a><b title="What then is this!" alt="Login as a client if you want to make a payment to another accounct such as a merchant or layaway account"><img src="https://www.benfund.com/images/elements/icons/sm/info.gif" border="0"></b>
+<div style="overflow: hidden; visibility: hidden; opacity: 0; height: 0px; margin-left: 8px;" class="stretcher">
+<form name="form1" method="post" action="login_processor.php">
+                      <span class="emphasis">Benfund Number:</span><br />
+                        <input name="id" type="text" id="id" size="5" maxlength="6" class="huge">
+                      <br />
+                      <span class="emphasis">Password:</span><br />
+                        <input name="pw" type="password" id="pw" size="5" maxlength="10"class="huge"></p>
+                      <br />
+                      <input type="checkbox" name="remember" id="remember"><span class="emphasis">Remember me</span>
+                      <br />
+                      <div align="center">
+                        <input name="Submit" type="submit" value="Submit">
+                        <input type="reset" name="Submit2" value="Reset">
+                      </div>
+             </form>
+					  <br />
+					  <a href="https://www.benfund.com/pwd_hint.php" class="emphasis3">Forgot your Password?</a>
+					  <br />
+
+</div>
+</div>
+    </div>
+	</div>
+	</td></tr></table>
+	</div>
+	</div>
+	</td>
+  </tr>
+  <!--MAINBODY END-->
+  <!--FOOTER START-->
+  <tr>
+    <td colspan="2">
+<?php include ($ROOT."/includes/footer.php") ?>
+	</td>
+  </tr>
+  <!--FOOTER START-->
+</table>
+<?php unset($loggedout, $error, $foo3); ?>
+</body>
+</html>

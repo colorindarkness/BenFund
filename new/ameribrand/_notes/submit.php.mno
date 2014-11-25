@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<info>
+	<infoitem key="UD_layaway" value="name:Customerid;datatype:int,name:First Name;datatype:string,name:Last Name;datatype:string,name:Address;datatype:string,name:City;datatype:string,name:State;datatype:string,name:Zip Code;datatype:string,name:email Address;datatype:string" />
+</info>

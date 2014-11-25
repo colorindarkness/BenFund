@@ -1,0 +1,71 @@
+/* tables */
+table.tablesorter {
+	background-color: #CDCDCD;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	width: 100%;
+	text-align: left;
+}
+
+table.tablesorter thead{
+	background: url("https://www.benfund.com/images/elements/table/header.png");
+	background-repeat: repeat;
+	border: 1px solid #000;
+	font-size: 8pt;
+	padding: 4px;
+}
+
+table.tablesorter thead a{
+	color: #000;
+}
+
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+	border: 1px solid #BFBFBF;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.tablesorter .header {
+	background-image: url(https://www.benfund.com/images/elements/table/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	color: #3D3D3D;
+	padding: 4px;
+	background-color: #FFF;
+	border: 1px solid #DDDDDD;
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+	background-color:#E6E6E6;
+}
+
+table.tablesorter thead .headerSortDown, table.tablesorter thead .headerSortUp {
+	background: url("https://www.benfund.com/images/elements/table/header_sel.png");
+	background-repeat: repeat;
+}
+
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(https://www.benfund.com/images/elements/table/asc.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(https://www.benfund.com/images/elements/table/desc.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+div.pager {
+	margin-left: auto;
+  margin-right: auto;
+}
+input.pagedisplay {
+	border: none;
+	text-align: center;
+	font-family: Georgia, Garamond, "Times New Roman", Serif;
+	font-size: 16px;
+	color: #008000;
+}

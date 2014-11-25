@@ -1,0 +1,226 @@
+/* CSS Document */
+
+body {
+	margin-left: 15px;
+	height: 100%;
+	padding: 0px;
+ 	font-family: Georgia, Garamond, Times New Roman, Serif;
+	font-size: 18px;
+	text-align: left;
+	color: #333333;
+	background: #ffffff;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 750px;
+  display: block;
+  vertical-align: middle;
+	border: 0px;
+}
+
+.header_outer {
+	width: 750px;
+	}
+
+.header_inner {
+	padding: 6px;
+	background-image: url(https://www.benfund.com/images/bg.gif);
+	background-repeat: no-repeat;
+background-position: bottom left;
+	color: #484848;
+	text-align: justify;
+	}
+	
+span.logotext {
+	font-face: Garamond, Times New Roman;
+	font-size: 40pt;
+	color: #484848;
+	text-align: left;
+	}
+
+.slogan {
+	font-size: 10pt;
+	font-style: italic;
+	color: #484848;
+	text-decoration: none;
+	font-weight: bold;
+	clear: both;
+}
+
+.leftcolumn {
+	vertical-align: top;
+	float: left;
+	width: 150px;
+	clear: left;
+}
+
+.mainmenu {
+	background: #5B5BFF;
+	padding: 4px;
+	margin: 0px;
+	text-align: left;
+}
+
+.usermenu {
+	background: #E9AE36;
+	padding: 4px;
+	margin: 0px;
+	text-align: left;
+}
+
+.mainitem {
+	font-size: 14pt;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.mainitem2 {
+	font-size: 10pt;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.mainitem3 {
+	font-size: 8pt;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+hr.mainmenuhr {
+	border: 0;
+	width: 85px;
+	height: 1px;
+	color: #ffffff;
+	background-color: #ffffff;
+	text-align: left;
+}
+
+a:link, a:visited {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #FFFFB3;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+hr {
+	border: 0;
+	width: 400px;
+	height: 1px;
+	color: #484848;
+	background-color: #484848;
+	text-align: left;
+}
+
+.topmenu_outer {
+	width: 600px;
+	background-color: #DEEBB4;
+	}
+
+.topmenu_inner {
+	padding: 6px;
+	color: #484848;
+	text-align: right;
+	}
+
+.mainbody
+	width: 600px;
+	float:right;
+	}	
+	
+.content_outer {
+	width: 600px;
+	background-color: #F0F0F0;
+	}
+
+.content_inner {
+	padding: 6px;
+	color: #484848;
+	text-align: justify;
+	}
+
+.splash {
+  margin-left: auto;
+  margin-right: auto;
+	width: 384px;
+	height: 288px;
+  display: block;
+  vertical-align: middle;
+	border: 1px solid #5B5BFF;
+	clear: both;
+}
+
+.title {
+	font-size: 10pt;
+	color: #484848;
+	text-decoration: none;
+	font-weight: bold;
+	clear: both;
+}
+
+.splashtext {
+	font-size: 12pt;
+	color: #484848;
+	text-decoration: none;
+}
+
+.footer_outer {
+	width: 750px;
+	background-color: #3F2D53;
+	padding: 2px;
+	}
+
+.footer_inner {
+	width: 100%;
+	text-align: center;
+	}
+	
+span.footer_text {
+	font: 10pt arial geneva sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	}
+	
+#rotator
+{
+	border: 1px solid #808000;
+	overflow: hidden;
+	margin: auto auto auto;
+	position: relative;
+	width: 590px;
+	height: 290px;
+	text-align: center;
+	
+}
+
+#rotator img
+{
+	width: 590px;
+	height: 290px;
+}
+
+input.big {
+	font: 14pt georgia garamond serif;
+	}
+
+ input.text{
+  font-family:TrebuchetMS;
+  font-size:9pt;
+  font-weight:bold;
+  background-color:336699;
+  border-color:336699;
+  border-style:inset;
+  border-width:2px;
+  color:FFFFFF;
+}

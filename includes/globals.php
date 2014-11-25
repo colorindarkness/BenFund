@@ -1,0 +1,3 @@
+<?php
+$ROOT = "/benfund.com/"
+?>

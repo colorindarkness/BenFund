@@ -1,0 +1,122 @@
+/*
+   Add the following to your CSS file should you wish the cursor to
+   "wait" while the script is processing the sort
+
+body.sort-active *
+        {
+        cursor:wait;
+        }
+*/
+#datatable table
+        {
+        width: auto;
+        padding: 0;
+        margin: 0 auto 1.5em auto;
+        border-left: 1px solid #DDDDDD;
+        border-collapse:collapse;
+        }
+#datatable th
+        {
+        color: #C64934;
+        border-right: 1px solid #DDDDDD;
+        border-bottom: 1px solid #DDDDDD;
+        border-top: 1px solid #DDDDDD;
+        letter-spacing: 1px;
+        text-align: left;
+        padding: 8px 12px 4px 12px;
+        background: url(https://www.benfund.com/images/elements/bg_header.jpg) no-repeat;
+        vertical-align:middle;
+        }
+#datatable th.sortable,
+#datatable th.sortable-text,
+#datatable th.sortable-date,
+#datatable th.sortable-keep,
+#datatable th.sortable-date-dmy,
+#datatable th.sortable-numeric,
+#datatable th.sortable-currency,
+#datatable th.sortable-sortByTwelveHourTimestamp,
+#datatable th.sortable-sortIPAddress,
+#datatable th.sortable-sortEnglishLonghandDateFormat,
+#datatable th.sortable-sortScientificNotation,
+#datatable th.sortable-sortImage,
+#datatable th.sortable-sortFileSize
+
+        {
+        cursor:pointer;
+        background: #CAE8EA url(https://www.benfund.com/images/elements/bg_header_sortable.jpg) no-repeat;
+        height:25px;
+        padding: 8px 4px 4px 16px;
+        }
+#datatable th.forwardSort
+        {
+        background:#CAE8EA url(https://www.benfund.com/images/elements/bg_header_down.jpg) no-repeat 0 0;
+        }
+#datatable th.reverseSort
+        {
+        background:#CAE8EA url(https://www.benfund.com/images/elements/bg_header_up.jpg) no-repeat 0 0;
+        }
+#datatable th.forwardSort a,
+#datatable th.reverseSort a
+        {
+        color:#C64934;
+        outline:0 none;
+        }
+/*
+These styles should be added when very long tables are expected
+#datatable th.sort-active
+        {
+        background:#CAE8EA url(http://www.frequency-decoder.com/demo/table-sort-revisited/media/bg_header_sorting.jpg) no-repeat 0 0;
+        cursor:wait;
+        }
+#datatable th.sort-active a
+        {
+        color:#C64934 !important;
+        cursor:wait;
+        }
+*/
+#datatable th a
+        {
+        text-decoration:none;
+        color: #C64934;
+        }
+#datatable td a
+        {
+        text-decoration:none;
+        color:#239;
+        }
+#datatable td img
+        {
+        margin:0 auto;
+        border:3px solid #ddd;
+        }
+#datatable td a:hover
+        {
+        color:#C64934;
+        border-bottom:1px dotted #a80000;
+        text-decoration: underline;
+        }
+#datatable td
+        {
+        border-right: 1px solid #DDDDDD;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 6px 12px 6px 12px;
+        color: #000;
+        }
+#datatable td.lft
+        {
+        text-align:left;
+        }
+#datatable tr.row0 {
+        background-color:#F9F9F9;
+}
+#datatable tr.row1 {
+        background-color:#FFFFFF;
+}
+#datatable tr.row0:hover {
+        background-color:#F1F1F1;
+        cursor:pointer;
+}
+#datatable tr.row1:hover {
+        background-color:#F1F1F1;
+        cursor:pointer;
+}

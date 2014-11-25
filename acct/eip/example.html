@@ -1,0 +1,84 @@
+<html>
+<head><title>Ajax Edit In Place (EIP) Example</title>
+<style type="text/css">
+	.eip_editable { background-color: #FFFF00; padding: 3px; }
+	.eip_savebutton { background-color: #36f; color: #fff; }
+	.eip_cancelbutton { background-color: #000; color: #fff; }
+	.eip_saving { background-color: #903; color: #fff; padding: 3px; }
+	.eip_empty { color: #afafaf; }
+	.editme { padding-right: 45px; background: #FFFFFF url(https://www.benfund.com/images/elements/icons/sm/edit.png) no-repeat right; }
+</style>
+<script type="text/javascript" src="prototype.js"></script>
+<script type="text/javascript" src="EditInPlace.js"></script>
+<script type="text/javascript">
+Event.observe(window, 'load', init, false);
+function init() {
+	EditInPlace.makeEditable( {
+		type: 'text',
+		id: 'emptyvalue',
+		save_url: 'edit.php'
+	} );
+	EditInPlace.makeEditable( {
+		type: 'text',
+		id: 'editme',
+		save_url: 'edit.php'
+	} );
+	EditInPlace.makeEditable( {
+		type: 'textarea',
+		id: 'anotheredit',
+		save_url: 'edit.php'
+	} );
+	EditInPlace.makeEditable( {
+		type: 'select',
+		id: 'mycolor',
+		save_url: 'optionedit.php',
+		options: {
+			red: 'Red',
+			blue: 'Blue',
+			lightgreen: 'Light Green',
+			green: 'Green',
+			darkgreen: 'Dark Green',
+			pink: 'Pink'
+		}
+	} );
+}
+</script>
+</head>
+<body>
+
+<h1><a href="http://josephscott.org/code/js/eip/">Ajax Edit In Place (EIP) Example</a></h1>
+
+<p>
+Edit In Place
+<a href="http://joseph.randomnetworks.com/tag/editinplace">blog entries</a>
+</p>
+
+<p>
+Source for <a href="edit.phps">edit.php</a>
+</p>
+
+<p>
+Current release: <a href="http://josephscott.org/code/js/eip/releases/eip-0.2.2.tar.gz">eip-0.2.2.tar.gz</a>
+
+<hr />
+
+<h3>Examples</h3>
+
+<p>
+Empty value edit: <span id="emptyvalue"></span>
+</p>
+
+<p>
+<span id="editme" class="editme">AJAX edit in place like flickr.</span>
+</p>
+
+<p>
+<span id="anotheredit">If you want room for more text you can use a textarea to edit instead.</span>
+</p>
+
+<p>
+Pick a color: <span id="mycolor">Green</span>
+</p>
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+var newrow = $("input").attr("name", function (iter) {
+          return prefix + iter[0];
+        })
+        .each(function () {
+          $("name", this).attr(prefix + this.id);

@@ -1,0 +1,226 @@
+<html>
+<body>
+<center><table>
+<tr>
+<td><img SRC="http://www.websweeper.com/php/spa_rooms/pics/enjoy.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/att.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/bug-left.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/color.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/comfort.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/easya.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/fabric.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/privacy.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/wind.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/custom.gif" height=200 width=30>
+</td>
+
+<td>
+<center><b><font face="Arial,Helvetica"><font color="#CC0000"><font size=+1>Introducing&nbsp;<?php print ("$prodname!\n");?></font></font></font></b></center>
+
+<center><table WIDTH="525" >
+<tr>
+<td>
+<center><b><font face="Arial,Helvetica"><font color="#000099">Comfortably
+Enjoy Your Spa All Year Round</font></font></b>
+<br><b><font face="Arial,Helvetica"><font color="#CC0000"><font size=+1>Custom
+Manufactured for&nbsp;<?php print ("$coname\n");?></font></font></font></b></center>
+
+<center><table>
+<tr>
+<td><img SRC="http://www.websweeper.com/php/spa_rooms/pics/spa6.jpg" BORDER=0 height=349 width=461></td>
+</tr>
+</table></center>
+
+<center>
+<hr WIDTH="400"><font face="Arial,Helvetica"><font color="#000099">Easy
+to Assemble Kit (takes about 4 to 5 hours to construct)&nbsp;
+<hr WIDTH="400">Heavy Duty Aluminum Frame Construction with Satin Finish
+(.062 wall)&nbsp;
+<hr WIDTH="400">&nbsp;Available with Either Screen walls, Clear walls,
+or Both. (tops are clear)&nbsp;
+<hr WIDTH="400">&nbsp;More flexible than any other type of unit on the
+market! Order both the screen wall system for summer and the clear walls
+for the colder seasons!&nbsp;</font></font>
+<br>
+<hr WIDTH="400"><font face="Arial,Helvetica"><font color="#000099">&nbsp;Many
+Beautiful Color Combinations to select from.&nbsp;
+<hr WIDTH="400">&nbsp;Withstands winds Up to 55 MPH with unprotected exposure.&nbsp;
+<hr WIDTH="400">&nbsp;Will support a 30 lb. Snowload. (when used over a
+spa)&nbsp;
+<hr WIDTH="400">&nbsp;Zippered Entry door installs on Either Side of room
+and is lockable!&nbsp;</font></font>
+<hr WIDTH="400"></center>
+<font face="Arial,Helvetica"><font color="#000099">When there's a need
+to cover a patio, porch, spa, or even create your very own Greenhouse,
+there's a New, Beautiful, and Economical way to get the job done! We encourage
+you to take a look at this quality product.&nbsp; We trust you'll be impressed
+with what you see.&nbsp;</font></font></td>
+</tr>
+</table></center>
+
+<center><table WIDTH="525" >
+<tr VALIGN=TOP>
+<td>
+<center><table CELLSPACING=5 >
+<tr VALIGN=TOP>
+<td><img SRC="http://www.websweeper.com/php/spa_rooms/pics/spa11s.jpg" NOSAVE height=105 width=138></td>
+
+<td><img SRC="http://www.websweeper.com/php/spa_rooms/pics/spa5s.jpg" NOSAVE height=99 width=137></td>
+
+<td><img SRC="http://www.websweeper.com/php/spa_rooms/pics/spa6s.jpg" NOSAVE height=105 width=138></td>
+</tr>
+</table></center>
+
+<hr WIDTH="500"><font face="Arial,Helvetica"><font color="#000099">The
+Tops of our rooms are always Crystal Clear 20 mil. Vinyl which allows</font></font>
+<br><font face="Arial,Helvetica"><font color="#000099">for star gazing
+on any clear night!</font></font>
+<br>
+<hr WIDTH="500"><font face="Arial,Helvetica"><font color="#000099">All
+rooms have a color coordinated trim panel and "kickplate" made from a 14
+oz. Solid Vinyl laminated polyester material.</font></font>
+<br>
+<hr WIDTH="500"><font face="Arial,Helvetica"><font color="#000099">&nbsp;The
+walls are available in your choice of screen colors or clear 20 mil vinyl.
+Our Screen is the Highest Quality available. This screen is Heavy Duty
+(11 oz. per square yard) Vinyl coated polyester and comes in your choice
+of 6 decorator colors. For a comparison, typical window screen is about
+4 oz. per square yard and ours is 14 oz. per square yard. A difference
+you'll be proud of for many years to come.&nbsp;</font></font>
+<br>
+<hr WIDTH="500">
+<center><b><font face="Arial,Helvetica"><font color="#CC0000">Trim Color
+Options</font></font></b></center>
+
+<center><table BORDER >
+<tr>
+<td><img SRC="http://www.websweeper.com/screen/spa/trim-white.gif" height=100 width=100>
+<center><b><font face="Arial,Helvetica"><font color="#000099">White</font></font></b></center>
+</td>
+
+<td>
+<center><img SRC="http://www.websweeper.com/screen/spa/trim-gray.gif" height=100 width=100>
+<br><b><font face="Arial,Helvetica"><font color="#000099">Gray</font></font></b></center>
+</td>
+
+<td>
+<center><img SRC="http://www.websweeper.com/screen/spa/trim-almond.gif" height=100 width=100>
+<br><b><font face="Arial,Helvetica"><font color="#000099">Almond</font></font></b></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center><img SRC="http://www.websweeper.com/screen/spa/trim-blue.gif" height=100 width=100>
+<br><b><font face="Arial,Helvetica"><font color="#000099">Blue</font></font></b></center>
+</td>
+
+<td>
+<center><img SRC="http://www.websweeper.com/screen/spa/trim-green.gif" height=100 width=100>
+<br><b><font face="Arial,Helvetica"><font color="#000099">Green</font></font></b></center>
+</td>
+
+<td>
+<center><img SRC="http://www.websweeper.com/screen/spa/trim-black.gif" height=100 width=100>
+<br><b><font face="Arial,Helvetica"><font color="#000099">Black</font></font></b></center>
+</td>
+</tr>
+</table></center>
+
+<center>
+<p>
+<hr WIDTH="500"><b><font face="Arial,Helvetica"><font color="#CC0000">Screen
+Color Options:</font></font></b></center>
+
+<center><table BORDER >
+<tr>
+<td><img SRC="http://www.websweeper.com/screen/scrn12.gif" NOSAVE height=98 width=108>
+<center><b><font face="Arial,Helvetica"><font color="#000099">White</font></font></b></center>
+</td>
+
+<td><img SRC="http://www.websweeper.com/screen/spa/gray-screen.gif" height=98 width=108>
+<center><b><font face="Arial,Helvetica"><font color="#000099">Gray</font></font></b></center>
+</td>
+
+<td><img SRC="http://www.websweeper.com/screen/scrn10.gif" height=98 width=108>
+<center><b><font face="Arial,Helvetica"><font color="#000099">Almond</font></font></b></center>
+</td>
+</tr>
+
+<tr>
+<td><img SRC="http://www.websweeper.com/screen/scrn7.gif" height=98 width=108>
+<center><b><font face="Arial,Helvetica"><font color="#000099">Blue</font></font></b></center>
+</td>
+
+<td><img SRC="http://www.websweeper.com/screen/scrn4.gif" height=98 width=108>
+<center><b><font face="Arial,Helvetica"><font color="#000099">Green</font></font></b></center>
+</td>
+
+<td><img SRC="http://www.websweeper.com/screen/scrnblk.gif" NOSAVE height=98 width=108>
+<center><b><font face="Arial,Helvetica"><font color="#000099">Black</font></font></b></center>
+</td>
+</tr>
+</table></center>
+</td>
+</tr>
+</table></center>
+
+<center><table WIDTH="525" >
+<tr VALIGN=TOP>
+<td>
+<center><table CELLSPACING=5 >
+<tr ALIGN=CENTER VALIGN=CENTER>
+<td><img SRC="http://www.websweeper.com/php/spa_rooms/pics/spa12s.jpg" NOSAVE height=105 width=138></td>
+
+<td><img SRC="http://www.websweeper.com/php/spa_rooms/pics/spa10s.jpg" NOSAVE height=105 width=138></td>
+
+<td><img SRC="http://www.websweeper.com/php/spa_rooms/pics/spa1s.jpg" NOSAVE height=107 width=110></td>
+</tr>
+</table></center>
+
+<center>
+<hr WIDTH="500"></center>
+</td>
+</tr>
+
+<tr>
+<td>
+<center><b><font face="Arial,Helvetica"><font color="#CC0000">Warranty:</font></font></b>
+<br><b><font face="Arial,Helvetica"><font color="#000099"><font size=-1>Walls,
+Zippered entry, and Top: 100% first 3 years, 50% for years 4 thru 5.</font></font></font></b>
+<br><b><font face="Arial,Helvetica"><font color="#000099"><font size=-1>Frame
+and Fittings: 100% first 5 years.</font></font></font></b>
+<br>
+<hr WIDTH="500">
+<br><b><font face="Arial,Helvetica"><font color="#000099">We're Introducing
+Our New Spa Enclosure at a Discounted Price.
+<br>Suggested Retail on a 8.5' wide by 12' long model is&nbsp;<font face="Arial,Helvetica"><font color="#CC0000"><?php print ("\$$retprice.\n");?></font></font>
+<br>Your price is Only&nbsp;<font face="Arial,Helvetica"><font color="#CC0000"><?php print ("\$$saleprice\n");?></font></font>on orders placed prior to&nbsp;<font face="Arial,Helvetica"><font color="#CC0000"><?php print ("$saledate.\n");?></font></font></b>
+<p><b><font face="Arial,Helvetica"><font color="#000099">The&nbsp;<?php print ("$prodname\n");?>is
+Available Only at:</font></font></b>
+<p><b><font face="Arial,Helvetica" Size=+2><font color="#CC0000"><?php print ("$coname\n");?></font></font></font></b>
+<br><b><font face="Arial,Helvetica"><font color="#000099"><?php print ("$coadd\n");?>
+<br><?php print ("$cocitystzip\n");?>
+<br><?php print ("$cophone\n");?>
+<br>Fax&nbsp;<?php print ("$cofax\n");?></font></font></b></center>
+</td>
+</tr>
+</table></center>
+</td>
+
+<td><img SRC="http://www.websweeper.com/php/spa_rooms/pics/enjoy.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/att.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/bug-left.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/color.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/comfort.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/easya.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/fabric.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/privacy.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/wind.gif" height=200 width=30>
+<br><img SRC="http://www.websweeper.com/php/spa_rooms/pics/custom.gif" height=200 width=30>
+</td>
+</tr>
+</table></center>
+
+</body>
+</html>

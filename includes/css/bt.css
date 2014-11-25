@@ -1,0 +1,25 @@
+a.tooltip {
+	opacity: 0.95;
+	font-family: Arial;
+	border: none;
+	width: 200px;
+	padding-top:25px;
+	height: 135px;
+	background: url('https://www.benfund.com/images/elements/bt.png') no-repeat top;
+	text-decoration:none;
+	text-align:center;
+	}
+	
+a.tooltip h3 {
+	color:#3CA3FF;
+	margin-bottom: 0.75em;
+	font-size: 12pt;
+	width: 220px;
+	text-align: center;
+}
+
+a.tooltip p {
+	width: 200px;
+	color: #4169E1;
+	background: url(https://www.benfund.com/images/elements/bt_fill.png) no-repeat top;
+ }
